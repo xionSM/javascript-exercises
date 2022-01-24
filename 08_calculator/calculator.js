@@ -33,15 +33,12 @@ return sum
 	
 };
 
-const factorial = function(num) {
-  let newArray = [];
-  let sum = 1;
-  for (let i = num; num > 0; num--){
-    newArray.push(i)
-    sum *= newArray.length
+const factorial = (num) => {
+  let sum = 1
+  for(let i = 1; num + 1 > i; i++) {
+      sum *= i
   }
   return sum
-	
 };
 
 // Do not edit below this line
